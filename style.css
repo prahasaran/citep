@@ -1,0 +1,59 @@
+
+body {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.nav-background {
+    overflow: hidden;
+}
+.nav-background img {
+    max-width:100%;
+    max-height:100%;
+    margin:auto;
+    display: inline;
+}
+
+.logo {
+    overflow: hidden;
+    float:left;
+    padding: 0.25em;
+    font-size: 1.5em;
+    margin-left: 0.5em;
+    text-transform: uppercase;
+}
+
+.logo .picture {
+    height: 40px;
+    width: 80px;
+}
+.navigation {
+    float:left;
+    margin: 0.75em 0;
+}
+.navigation li {
+    float:left;
+    list-style: none;
+    margin-left: 3em;
+    cursor: pointer;
+    padding: 0.25em 0.5em;
+    border: 1px solid transparent;
+}
+.navigation li:first-child {
+    margin-left: 1em;
+}
+.navigation li:hover {
+    border-color: #000;
+}
+
+.content {
+    clear: both;
+    margin: 2em 2em;
+    max-width: 800px;
+}
+.content p {
+    margin: 1em auto;
+    line-height: 1.5em;
+}
+.content ul {
+    margin: 1em auto;
+}
