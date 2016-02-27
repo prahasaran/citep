@@ -45,19 +45,27 @@
 /***/ function(module, exports, __webpack_require__) {
 
 	__webpack_require__(1);
-	document.write(Works);
+	module.exports = __webpack_require__(1);
+
 
 /***/ },
 /* 1 */
 /***/ function(module, exports, __webpack_require__) {
 
+	__webpack_require__(2);
+
+
+/***/ },
+/* 2 */
+/***/ function(module, exports, __webpack_require__) {
+
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(2);
+	var content = __webpack_require__(3);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
-	var update = __webpack_require__(4)(content, {});
+	var update = __webpack_require__(5)(content, {});
 	if(content.locals) module.exports = content.locals;
 	// Hot Module Replacement
 	if(false) {
@@ -74,21 +82,21 @@
 	}
 
 /***/ },
-/* 2 */
+/* 3 */
 /***/ function(module, exports, __webpack_require__) {
 
-	exports = module.exports = __webpack_require__(3)();
+	exports = module.exports = __webpack_require__(4)();
 	// imports
 
 
 	// module
-	exports.push([module.id, "body {\n    background: red;\n\n}\n\n.element {\n    color: red;\n}", ""]);
+	exports.push([module.id, "\nbody {\n    max-width: 1200px;\n    margin: 0 auto;\n}\n.nav-background {\n    overflow: hidden;\n}\n.nav-background img {\n    max-width:100%;\n    max-height:100%;\n    margin:auto;\n    display: inline;\n}\n\n.logo {\n    overflow: hidden;\n    float:left;\n    padding: 0.25em;\n    font-size: 1.5em;\n    margin-left: 0.5em;\n    text-transform: uppercase;\n}\n\n.logo .picture {\n    height: 40px;\n    width: 80px;\n}\n.navigation {\n    float:left;\n    margin: 0.75em 0;\n}\n.navigation li {\n    float:left;\n    list-style: none;\n    margin-left: 3em;\n    cursor: pointer;\n    padding: 0.25em 0.5em;\n    border: 1px solid transparent;\n}\n.navigation li:first-child {\n    margin-left: 1em;\n}\n.navigation li:hover {\n    border-color: #000;\n}\n\n.content {\n    clear: both;\n    margin: 2em 2em;\n    max-width: 800px;\n}\n.content p {\n    margin: 1em auto;\n    line-height: 1.5em;\n}\n.content ul {\n    margin: 1em auto;\n}", ""]);
 
 	// exports
 
 
 /***/ },
-/* 3 */
+/* 4 */
 /***/ function(module, exports) {
 
 	/*
@@ -144,7 +152,7 @@
 
 
 /***/ },
-/* 4 */
+/* 5 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/*
